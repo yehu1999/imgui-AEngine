@@ -14,11 +14,12 @@ project "ImGui"
     files
     {
         -- ImGui 核心文件
-       "imconfig.h",
+        "imconfig.h",
 		"imgui.h",
 		"imgui.cpp",
 		"imgui_draw.cpp",
 		"imgui_internal.h",
+        "imgui_tables.cpp",
 		"imgui_widgets.cpp",
 		"imstb_rectpack.h",
 		"imstb_textedit.h",
