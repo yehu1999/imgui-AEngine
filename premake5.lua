@@ -30,7 +30,6 @@ project "ImGui"
     includedirs
     {
         ".",       -- 当前ImGui根目录
-        "examples",-- 案例文件目录
         "backends" -- 后端文件目录
     }
 
