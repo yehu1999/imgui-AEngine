@@ -1,3 +1,22 @@
+# Binary For AEngine
+**/binary/
+**/intermediate/
+
+# Log and TempFile
+*.log
+*.tmp
+*.temp
+
+# Visual Studio file and folder
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sdf
+*.suo
+*.ipch
+
 ## OSX artifacts
 .DS_Store
 
