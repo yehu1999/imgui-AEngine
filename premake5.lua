@@ -2,7 +2,7 @@
 project "ImGui"
     kind "StaticLib"        -- 项目类型：静态链接库
     language "C++"          -- 使用C++语言进行编译
-    staticruntime "on"      -- 静态链接：启用静态运行时库
+    staticruntime "on"      -- 启用静态运行时库
     warnings "off"          -- 关闭警告信息
 
     -- 目标文件输出目录：binary/[输出目录]/[项目名]
@@ -15,16 +15,16 @@ project "ImGui"
     {
         -- ImGui 核心文件
         "imconfig.h",
-		"imgui.h",
-		"imgui.cpp",
-		"imgui_draw.cpp",
-		"imgui_internal.h",
+        "imgui.h",
+        "imgui.cpp",
+        "imgui_draw.cpp",
+        "imgui_internal.h",
         "imgui_tables.cpp",
-		"imgui_widgets.cpp",
-		"imstb_rectpack.h",
-		"imstb_textedit.h",
-		"imstb_truetype.h",
-		"imgui_demo.cpp"
+        "imgui_widgets.cpp",
+        "imstb_rectpack.h",
+        "imstb_textedit.h",
+        "imstb_truetype.h",
+        "imgui_demo.cpp"
     }
 
     -- 包含目录：需要能找到后端头文件
@@ -104,8 +104,5 @@ project "ImGui"
         runtime "Release"     -- 使用发布运行时
         optimize "speed"      -- 优化执行速度
 
-    -- Dist（分发）配置
-    filter "configurations:Dist"
-        runtime "Release"     -- 使用发布运行时
-        optimize "speed"      -- 优化执行速度
-        symbols "off"         -- 不生成调试符号（减小体积）
+    -- Dist
+    --（ImGui没有该配置）
